@@ -13,14 +13,21 @@ class Peca {
   }
 
   void drawPeca() {
-    stroke(39, 81, 255);
-    fill(262, 253, 252);
-    rect(x1, y1, x2, y2);
+    if(this.num==9){
+      stroke(0,0,0);
+      fill(240, 240, 240);
+      rect(x1, y1, x2, y2);
+    }
+    else{
+      stroke(0,0,0);
+      fill(255,255,255);
+      rect(x1, y1, x2, y2);
 
-    textSize(52);
-    stroke(0, 0, 0);
-    fill(72, 158, 255);
-    text(num, x1+48, y1+86);
+      textSize(52);
+      stroke(0, 0, 0);
+      fill(72, 158, 255);
+      text(num, x1+48, y1+86);
+    }
   }
 
   void setX1(float x1) {
